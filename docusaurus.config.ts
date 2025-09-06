@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Vypravěčův koutek',
-  tagline: 'Příběhy dnešní doby',
+  tagline: 'Střípky a útržky z neviditelného bojiště',
   favicon: 'img/avatar.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -23,7 +23,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'kajicnik', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  projectName: 'vypravec', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -32,8 +32,8 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'cs',
+    locales: ['cs'],
   },
 
   presets: [
@@ -41,31 +41,33 @@ const config: Config = {
       'classic',
       {
         docs: {
-          sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          sidebarPath: require.resolve('./sidebars.ts'),
+          editUrl: undefined,
+          showLastUpdateAuthor: false,
+          showLastUpdateTime: false,
+          breadcrumbs: false,
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false, // Disable blog completely
         theme: {
           customCss: './src/css/custom.css',
         },
       } satisfies Preset.Options,
+    ],
+  ],
+
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'navody',
+        path: 'navody',
+        routeBasePath: 'navody',
+        sidebarPath: require.resolve('./sidebarsNavody.ts'),
+        editUrl: undefined,
+        showLastUpdateAuthor: false,
+        showLastUpdateTime: false,
+        breadcrumbs: false,
+      },
     ],
   ],
 
@@ -76,63 +78,55 @@ const config: Config = {
       title: 'Vypravěčův koutek',
       logo: {
         alt: 'Vypravěčův koutek Logo',
-        src: 'img/avatar.webp',
+        src: 'img/avatar.png',
       },
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Příběhy',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
+          to: '/navody',
+          position: 'left',
+          label: 'Návody',
         },
       ],
+    },
+    docs: {
+      sidebar: {
+        hideable: true,
+        autoCollapseCategories: true,
+      }
     },
     footer: {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Oddělení',
           items: [
             {
-              label: 'Test',
+              label: 'Příběhy',
               to: '/docs/intro',
             },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Github',
-              href: 'https://x.com/docusaurus',
+              label: 'Návody',
+              to: '/navody',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'Moje odkazy',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'Medium',
+              href: 'https://medium.seznam.cz/autor/vypravec-29259',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
+              label: 'Substack',
+              href: 'https://vypravec.substack.com/'
+            }
           ],
         },
       ],

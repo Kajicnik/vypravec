@@ -28,3 +28,122 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Hide pagination navigation (Previous/Next buttons) */
+.pagination-nav {
+  display: none;
+}
+
+/* Sidebar background with bookcase pattern */
+.theme-doc-sidebar-container,
+.navbar-sidebar {
+  background-image: url('/img/bookcase.png');
+  background-repeat: repeat;
+  background-size: 150px auto;
+}
+
+/* Make sidebar content semi-transparent to show background */
+.sidebar_njMd {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme='dark'] .sidebar_njMd {
+  background-color: rgba(24, 25, 26, 0.7);
+}
+
+/* Main content area with parchment background */
+.main-wrapper,
+.docMainContainer_TBSr,
+.theme-doc-markdown {
+  background-image: url('/img/parchment.png');
+  background-repeat: repeat;
+  background-size: 300px auto;
+}
+
+/* Make content cover full screen width and height */
+.main-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 0 !important;
+}
+
+.docMainContainer_TBSr {
+  max-width: 100%;
+  padding: 0 !important;
+  margin: 0 auto !important;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0 20px !important;
+  margin: 0 auto !important;
+}
+
+.row {
+  margin: 0 !important;
+}
+
+.docItemCol_VOVn {
+  max-width: 100%;
+  padding: 0 !important;
+}
+
+/* Remove padding from document container */
+.docItemContainer_Djhp {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Remove all top spacing */
+.docMainContainer_TBSr .container {
+  padding-top: 0 !important;
+}
+
+.docMainContainer_TBSr .row {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+.padding-top--md {
+  padding-top: 0 !important;
+}
+
+.padding-bottom--lg {
+  padding-bottom: 0 !important;
+}
+
+/* Remove top padding and margin from breadcrumbs */
+.breadcrumbsContainer_Z_bl {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Target article and nav elements directly */
+article {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+nav[aria-label="Breadcrumbs"] {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Make content semi-transparent to show parchment */
+.markdown,
+.theme-doc-markdown,
+.docItemContainer_Djhp {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0;
+  min-height: calc(100vh - 60px);
+}
+
+[data-theme='dark'] .markdown,
+[data-theme='dark'] .theme-doc-markdown,
+[data-theme='dark'] .docItemContainer_Djhp {
+  background-color: rgba(24, 25, 26, 0.8);
+}
