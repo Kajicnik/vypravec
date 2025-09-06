@@ -88,7 +88,7 @@ const config: Config = {
           label: 'Příběhy',
         },
         {
-          to: '/navody',
+          to: '/navody/',
           position: 'left',
           label: 'Návody',
         },
@@ -112,7 +112,7 @@ const config: Config = {
             },
             {
               label: 'Návody',
-              to: '/navody',
+              to: '/navody/',
             },
           ],
         },
