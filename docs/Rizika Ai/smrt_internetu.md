@@ -42,9 +42,3 @@ Proč se tomu Google a další společnosti nebrání? Nechci jim křivdit, brá
 Jak jinak, přišlo AI. Společnosti se nyní snaží přesměrovat lidi k modelům místo vyhledávačů. Zvýšená míra zaplevelenosti jim tak hraje do karet - a tak si plevel může volně bujet.
 
 Internet je privilegium. Je možné, že o něj brzy přijdeme a zbydou jen ohraničené a hlídané zahrady, kde pár jedinců utlouká nápor botů, snažících se vytřískat z reklamy ještě pár korun navíc. Není to škoda?
-
----
-
-*Děkuji za trpělivost, pokračování příště.*
-
-*Máte na tohle téma jiný názor? Napište o něm vlastní článek.*
