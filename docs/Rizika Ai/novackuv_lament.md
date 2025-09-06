@@ -1,9 +1,9 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 title: Nováčkův lament
 ---
 
-# Rizika AI, část 2 - nováčkův lament
+# Část 2 - nováčkův lament
 
 Minule jsem se zamyslel nad tím, jestli přesunutí přemýšlení na stroj není pohodlný způsob, jak se neučit. Pojďme o krok dále.
 

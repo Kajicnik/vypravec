@@ -1,9 +1,9 @@
 ---
-sidebar_position: 4
+sidebar_position: 2
 title: Lenochova zhouba
 ---
 
-# Rizika AI, část 1 - lenochova zhouba
+# Část 1 - lenochova zhouba
 
 Umělá inteligence v podání velkých jazykových modelů (LLM) je nepochybně mocný nástroj. Pod jeho povrchem se ale skrývá spousta zákeřností, které nemusí být na první pohled zjevné.
 
@@ -32,7 +32,3 @@ Někdo může namítat, že to je volba každého. "Není to stejné, jako když
 Ale nikdy v minulosti jsme neměli tak pohodlný způsob, jak nemyslet. A jak známo, myšlení bolí.
 
 ---
-
-*Děkuji za trpělivost, pokračování příště.*
-
-*Máte na tohle téma jiný názor? Napište o něm vlastní článek.*
